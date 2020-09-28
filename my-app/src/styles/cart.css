@@ -1,0 +1,31 @@
+.cart-row{
+    margin: 0 100px;
+}
+
+td{
+    padding-left:25px;
+    height: 100%;
+}
+
+#check-out{
+    width: 310px;
+    height: 50px;
+    border: none;
+    color:white;
+    background-color: #ff5f6d;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.bill-table{
+    border:none;
+    background-color: #f9f9f9;
+    padding:20px;
+}
+
+.info-table{
+    width: 430px;
+    height: 190px;
+    border:none;
+    background-color: #f9f9f9;
+    padding:20px;
+}

@@ -1,0 +1,18 @@
+ul{
+    list-style-type: none;
+  }
+  .headline{
+    font-weight: bold;
+    font-size:20px;
+  }
+  .table{
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+  .table li{
+    margin:10px 0;
+  }
+
+.menu-option:hover{
+  color:#ffa15f;
+}

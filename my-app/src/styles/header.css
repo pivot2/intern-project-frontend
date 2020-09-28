@@ -1,0 +1,155 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    border-bottom:solid 1px #ccc;
+    padding:15px;
+  }
+  .search-bar{
+    padding:3px 15px;
+    border:solid 1px #ccc;
+    border-radius: 20px;
+    width: 200px;
+    align-self: center;
+    margin-left: 100px;
+  }
+  #input-search{
+    width: 150px;
+    border:none;
+  }
+  .fa-search{
+    color:rgb(160, 160, 160);
+    vertical-align: middle;
+    font-size:20px;
+    cursor: pointer;
+    margin-top:2px;
+  }
+  #logo{
+    height: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  #register{
+    background-color: white;
+    color:rgb(104, 104, 104);
+    border:none;
+    border-radius: 20px;
+    cursor:pointer;
+    
+    width: 70px;
+  }
+  #service{
+    margin-right: 100px;
+  }
+  #login{
+    background-color: white;
+    color:#ffa15f;
+    border:none;
+    border-radius: 20px;
+    cursor:pointer;
+    border:1px solid #ffa15f;
+    width: 70px;
+  }
+  #register:hover{
+    border:1px solid rgb(104, 104, 104);
+  }
+  #login:hover{
+    color:white;
+    background-color:#ffa15f;
+  }
+
+  #service .badge {
+    position: relative;
+    /* padding:4px 6px; */
+    border-radius:50%;
+    width: 25px;
+    height: 20px;
+  }
+  
+#lblCartCount {
+      
+      font-size: 12px;
+      background: #ffa15f;
+      vertical-align: top;
+      margin-left: -15px; 
+      margin-top:-4px;
+  }
+
+.avatar{
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #ffa15f;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.cart{
+  position: absolute;
+  top:65px;
+  right: 0px;
+  width: 270px;
+  border:0.5px solid #f6f6f6;
+  z-index: 100;
+  box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.14);
+  background-color: white;
+}
+
+.cart ul{
+  width: 100%;
+  padding:0;
+  margin:0;
+}
+
+.cart li{
+  padding:10px;
+  white-space: normal;
+  height: 80px;
+  text-align: left;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.cart li p{
+  font-size:12px;
+}
+
+.cart img{
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+.view-cart{
+  display: grid;
+  place-items: center;
+  height: 69px;
+  color:#ffa15f;
+  cursor: pointer;
+}
+
+.menu{
+  position: absolute;
+  top:70px;
+  right: 100px;
+  box-shadow: 0 14px 30px 0 rgba(0, 0, 0, 0.14);
+  z-index: 999;
+  background-color: white;
+}
+.menu ul{
+  padding:0;
+  margin:0;
+  width: 100px;
+}
+.menu li{
+  padding-top:5px;
+  padding-left: 5px;
+  height: 30px;
+  color:rgb(192, 192, 192);
+}
+
+.menu li:hover{
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+  

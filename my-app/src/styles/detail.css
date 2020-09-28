@@ -1,0 +1,85 @@
+.size-filter{
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border:solid 1px #808080;
+    margin-right:20px;
+}
+.color-filter{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right:20px;
+}
+.Orange{
+    background-color:rgb(255, 180, 41);
+}
+.Red{
+    background-color:rgb(255, 89, 89);
+}
+.Blue{
+    background-color:rgb(110, 110, 255);
+}
+
+.Brown{
+    background-color:rgb(182, 89, 89);
+}
+
+.plusminus{
+    border:none;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    width: 35%;
+    height: 100%;
+    font-size: 24px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+#number{
+    width: 30%;
+    height: 50%;
+    margin-bottom: 20px;
+    border:none;
+    text-align: center;
+    font-size:16px;
+}
+
+.wrapper {
+    width: 108px;
+    height: 42px;
+    border: solid 1px #e4e4e4;
+    background-color: white;
+  }
+  
+.group{
+    margin:20px 0;
+}
+
+#cart-btn{
+    background-color: #5f6dff;
+    width: 100%;
+    margin-top:20px;
+    height: 50px;
+    color:white;
+    font-weight: 800;
+    font-size:16px;
+    border:none;
+}
+
+hr{
+    color:red;
+}
+
+.chosen{
+    background-color: #ffa15f;
+    color:white;
+    border:none;
+}
+
+.faded{
+    opacity: 0.5;
+}

@@ -1,0 +1,23 @@
+#noname{
+    position: absolute;
+    top:20px;
+    font-size:36px;
+    right: 30px;
+    color:white;
+}
+.relative{
+    position: relative;
+}
+.shop-now{
+    position: absolute;
+    width: 180px;
+    height: 49px;
+    background: #ffa15f;
+    bottom: 0;
+    display:grid;
+    place-items: center;
+    bottom:50px;
+    right:30px;
+    color:white;
+    cursor: pointer;
+}
