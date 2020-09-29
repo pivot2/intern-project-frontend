@@ -9,34 +9,95 @@ import icon2 from "../icon/overview-dark.svg";
 import icon3 from "../icon/payment-dark.svg";
 import icon4 from "../icon/products-orange.svg";
 import icon5 from "../icon/promotion-dark.svg";
-const sideBar = () => {
-  return (
-    <div className="col-lg-2 d-none d-lg-block">
-      <div className="side-table">
-        <ul className="table">
-          <p className="headline">Categories</p>
-          <li>All Dresses</li>
-          <li>Rompers / Jumpsuits</li>
-          <li>Casual dresses</li>
-          <li>Going out dresses</li>
-          <li>Party / Ocassion dresses</li>
-          <li>Mini dresses</li>
-          <li>Maxi / Midi dresses</li>
-          <li>Sets</li>
-        </ul>
 
-        <ul className="table">
-          <p className="headline">Filter</p>
-          <li>Size</li>
-          <li>Color</li>
-          <li>Brand</li>
-          <li>Style</li>
-          <li>Available</li>
-        </ul>
+class SideBar extends Component {
+  render() {
+    return (
+      <div className="col-lg-2 d-none d-lg-block">
+        <div className="side-table">
+          <ul className="table">
+            <p className="headline">Categories</p>
+            <li
+              className={
+                this.props.filterType === "All Dresses" ? "picked" : {}
+              }
+              onClick={() => this.props.onChangeType("All Dresses")}
+            >
+              All Dresses
+            </li>
+            <li
+              className={
+                this.props.filterType === "Rompers / Jumpsuits" ? "picked" : {}
+              }
+              onClick={() => this.props.onChangeType("Rompers / Jumpsuits")}
+            >
+              Rompers / Jumpsuits
+            </li>
+            <li
+              className={
+                this.props.filterType === "Casual dresses" ? "picked" : {}
+              }
+              onClick={() => this.props.onChangeType("Casual dresses")}
+            >
+              Casual dresses
+            </li>
+            <li
+              className={
+                this.props.filterType === "Going out dresses" ? "picked" : {}
+              }
+              onClick={() => this.props.onChangeType("Going out dresses")}
+            >
+              Going out dresses
+            </li>
+            <li
+              className={
+                this.props.filterType === "Party / Ocassion dresses"
+                  ? "picked"
+                  : {}
+              }
+              onClick={() =>
+                this.props.onChangeType("Party / Ocassion dresses")
+              }
+            >
+              Party / Ocassion dresses
+            </li>
+            <li
+              className={
+                this.props.filterType === "Mini dresses" ? "picked" : {}
+              }
+              onClick={() => this.props.onChangeType("Mini dresses")}
+            >
+              Mini dresses
+            </li>
+            <li
+              className={
+                this.props.filterType === "Maxi / Midi dresses" ? "picked" : {}
+              }
+              onClick={() => this.props.onChangeType("Maxi / Midi dresses")}
+            >
+              Maxi / Midi dresses
+            </li>
+            <li
+              className={this.props.filterType === "Sets" ? "picked" : {}}
+              onClick={() => this.props.onChangeType("Sets")}
+            >
+              Sets
+            </li>
+          </ul>
+
+          <ul className="table">
+            <p className="headline">Filter</p>
+            <li>Size</li>
+            <li>Color</li>
+            <li>Brand</li>
+            <li>Style</li>
+            <li>Available</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 class AdminSideBarComp extends Component {
   render() {
@@ -104,6 +165,6 @@ class AdminSideBarComp extends Component {
     );
   }
 }
-export default sideBar;
+export default SideBar;
 
 export const AdminSideBar = withRouter(AdminSideBarComp);

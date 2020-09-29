@@ -60,8 +60,10 @@ class Avatar extends Component {
         />
         <div class="menu invisible">
           <ul>
+            <li onClick={() => this.props.history.push("/info")}>
+              Account info
+            </li>
             <li onClick={this.LogOut}>Log out</li>
-            <li>Account info</li>
           </ul>
         </div>
       </Fragment>
@@ -74,7 +76,14 @@ class HeaderComp extends Component {
     super(props);
     this.Search = this.Search.bind(this);
   }
-  Search() {}
+  Search() {
+    let filter = document.getElementById("input-search").value;
+    if (this.props.onSearch) {
+      this.props.onSearch(filter);
+    } else {
+      this.props.history.push(`/?filter=${filter}`);
+    }
+  }
   render() {
     return (
       <div className="nav">

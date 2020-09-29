@@ -6,6 +6,7 @@ import Footer from "./component/footer";
 import RegisterForm from "./component/RegisterForm";
 import { Detail } from "./component/detail";
 import Cookies from "js-cookie";
+import "./styles/loader.css";
 class DetailPage extends Component {
   constructor(props) {
     super(props);

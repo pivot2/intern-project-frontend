@@ -32,7 +32,8 @@ class Info extends Component {
     });
   }
   componentDidMount() {
-    fetch(`/user/${localStorage.Id}`, {
+    console.log(Cookies.get("Id"));
+    fetch(`/user/${Cookies.get("Id")}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -41,11 +42,11 @@ class Info extends Component {
     })
       .then((data) => data.json())
       .then((data) => {
-        console.log(data);
-        // this.setState({
-        //   gmail: data.user[0].gmail,
-        //   name: data.user[0].name,
-        // });
+        //console.log(data);
+        this.setState({
+          gmail: data.user[0].gmail,
+          name: data.user[0].username,
+        });
       });
   }
   render() {
@@ -65,9 +66,10 @@ class Info extends Component {
           <div className="col-3">
             <div class="info-table">
               <p style={{ fontWeight: "bold", fontSize: "14px" }}>Name</p>
-              <p>{this.state.gmail}</p>
+
               <p>{this.state.name}</p>
               <p style={{ fontWeight: "bold", fontSize: "14px" }}>Email</p>
+              <p>{this.state.gmail}</p>
             </div>
           </div>
         </div>

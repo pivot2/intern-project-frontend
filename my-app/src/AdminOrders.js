@@ -1,16 +1,6 @@
 import { AdminSideBar } from "./component/side-bar";
 import React, { Component, Fragment } from "react";
-// class ItemDetail extends Component {
-//   render() {
-//     let item = this.props.item;
-//     let product = this.props.product;
-//     return (
-//       <Fragment>
-//
-//       </Fragment>
-//     );
-//   }
-// }
+import withLoader from "./component/withLoader";
 class Item extends Component {
   constructor(props) {
     super(props);
@@ -42,6 +32,7 @@ class ListItem extends Component {
   }
   render() {
     let items = this.props.items;
+    console.log(items);
     return (
       <Fragment>
         {items.map((item) => (
@@ -93,11 +84,7 @@ class Orders extends Component {
                 <th style={{ width: "10%" }}>STATUS</th>
                 <th style={{ width: "15%" }}></th>
               </tr>
-              {this.state.items.length !== 0 ? (
-                <ListItem items={this.state.items} />
-              ) : (
-                ""
-              )}
+              <ListItemLoader items={this.state.items} />
             </tbody>
           </table>
         </div>
@@ -106,4 +93,5 @@ class Orders extends Component {
   }
 }
 
+export const ListItemLoader = withLoader("items")(ListItem);
 export default Orders;

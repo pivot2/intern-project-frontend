@@ -152,3 +152,8 @@ option{
 .invisible{
   visibility: hidden;
 }
+
+.picked{
+  color:#ffa15f;
+  font-weight: 600;
+}
